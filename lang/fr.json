@@ -1,0 +1,8 @@
+{
+    "lib-item-select-dialog": {
+        "button": {
+            "cancel": "Annuler"
+        },
+        "options": "Options"
+    }
+}

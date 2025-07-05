@@ -1,0 +1,50 @@
+.item-select-dialog {
+    .name {
+        text-align: left;
+        white-space: nowrap;
+    }
+
+    .description {
+        color: #666666;
+        font-size: 75%;
+        font-weight: 600;
+        padding-inline: 0.5em;
+        text-align: right;
+        white-space: nowrap;
+    }
+
+    .table,
+    th,
+    td {
+        line-height: 1em;
+        padding: 0px;
+        width: 100%;
+    }
+
+    tr:nth-child(even) {
+        background-color: #00000000 !important;
+    }
+}
+
+button.item-select-dialog {
+    align-items: center;
+    display: flex;
+    margin: 4px 0px;
+    padding: 3px;
+}
+
+img.item-select-dialog {
+    border: 1px solid #444;
+    height: 2em;
+    margin-right: 0.5em;
+}
+
+fieldset.item-select-dialog {
+    border: 1px solid #a1a1a1;
+    padding: 5px;
+    gap: 0px;
+}
+
+div.item-select-dialog {
+    gap: 0px;
+}
