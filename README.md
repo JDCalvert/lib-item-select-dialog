@@ -1,7 +1,7 @@
 # Library: Item Select Dialog
 A module for Foundry VTT to allow a selection between several items. Automatically switches between ApplicationV1 and ApplicationV2 depending on the Foundry version.
 
-![Github All Releases](https://img.shields.io/github/downloads/JDCalvert/lub-item-select-dialog/total.svg)
+![Github All Releases](https://img.shields.io/github/downloads/JDCalvert/lib-item-select-dialog/total.svg)
 ![Github Latest Release](https://img.shields.io/github/downloads/JDCalvert/lib-item-select-dialog/1.0.1/total)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/jdcalvert)
