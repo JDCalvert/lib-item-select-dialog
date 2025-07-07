@@ -1,25 +1,15 @@
 import { DialogV1 } from "./dialog-v1.js";
 import { DialogV2 } from "./dialog-v2.js";
-import { Section, Option, Response } from "./common.js";
+import { DialogParameters, Response } from "../lib/lib-item-select-dialog-types/types.js";
 
-export * from "./common.js";
-
-/**
- * @template T
- */
-export class DialogParameters {
-    /** @type string */
-    title;
-
-    /** @type string */
-    heading;
-
-    /** @type Section<T>[] */
-    sections;
-
-    /** @type Option[] */
-    options;
-}
+Hooks.on(
+    "init",
+    () => {
+        CONFIG.itemSelectDialog = {
+            getItem
+        };
+    }
+);
 
 /**
  * @template T
@@ -27,7 +17,7 @@ export class DialogParameters {
  * @param {DialogParameters<T>} params The parameters to display the dialog
  * @returns {Promise<Response<T>} the choice that the user selected
 */
-export async function getItem(params) {
+async function getItem(params) {
     const selectionOptions = {};
     for (const option of params.options ?? []) {
         selectionOptions[option.id] = option.value;
@@ -110,7 +100,6 @@ function buildContent({ heading, sections = [], options = [] }) {
         `;
     }
 
-    const selectionOptions = {};
     if (options.length) {
         content += `
             <fieldset class="item-select-dialog">

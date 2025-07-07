@@ -1,4 +1,4 @@
-import { Option } from "./common.js";
+import { Option } from "../lib/lib-item-select-dialog-types/types.js";
 
 export class DialogV1 extends Dialog {
     /**
